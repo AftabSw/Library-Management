@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <a href="./index.html" class="logo" > 
+                <img src="./images/logo.png" alt="Logo">
+                <p> Rizvi College of Engineering Library</p>
+            </a>
+            <div class="head-icons">
+                <a onclick="toggleNotification()"><img id="msg-icon" src="./icons/notification.png" alt="Notification"></a>
+                <div id="notification">
+                    <ul>
+                        <li>1. Notification</li>
+                    </ul>
+                </div>
+                <a href="./settings.html"><img src="./icons/settings.png" alt="Settings"></a>
+            </div>
+        </div>
+        <nav>
+            <ul id="navbar">
+                <li class="nav-item">
+                    <a id="comp">Computer</a>
+                </li>
+                <li class="nav-item">
+                    <a id="extc">Electronics & Telecommunications</a>
+                </li>
+                <li class="nav-item">
+                    <a id="etrx">Electronics & Computer Science</a>
+                </li>
+                <li class="nav-item">
+                    <a id="mech">Mechanical</a>
+                </li>
+                <li class="nav-item">
+                    <a id="civil">Civil</a>
+                </li>
+                <li class="nav-item">
+                    <a id="ai">AI & Data Science</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="notification">
+
+        <ul>
+
+            <li>Hello</li>
+
+        </ul>
+
+    </div>
+
+    <div id="search">
+
+        <img src="./icons/search.png" alt="" class="search-icon">
+
+        <input type="text" class="search-box" placeholder="Search">
+
+    </div>
+    </header>
+    <div>
+        <h2 class="restyle">Edit Book</h2>
+    </div>
+    <br>
+    <div class="rectangle">
+        <form action="" method="POST">
+                <br><br><br>
+                <hr color="black"><br>
+                <p>
+               <label for="edit-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Title</label>
+               <input id="edit-title" name="edit-title" type="text" autocomplete="none" value="Harry Potter And the Deathly Hallows" readonly>
+               <label for="edit-author">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                   Author</label>
+               <input id="edit-author" name="edit-author" type="text" autocomplete="none" value="JK Rowling" readonly>
+                </p>
+                
+                <p>
+                <label for="edit-subject">&nbsp; Subject</label>
+               <input id="edit-subject" name="edit-subject" type="text" autocomplete="none" value="Magical Mystery" readonly>
+               <label for="edit-year">&nbsp; Published Year</label>
+               <input id="edit-year" name="edit-year" type="date" autocomplete="none">
+                </p>
+        
+                <p>
+                    <label for="edit-course">&nbsp; Course</label>
+                   <input id="edit-course" name="edit-course" type="text" autocomplete="none" value="Wizard" readonly>
+                   <label for="edit-ava">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Availability</label>
+                   <input id="edit-ava" name="edit-ava" type="text" autocomplete="none" value="Hell Yeah" readonly>
+                </p>
+               <br><br><br>
+                <hr color="black"><br><br>
+                <p>
+                    <label for="edit-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Title</label>
+                    <input id="edit-title" name="edit-title" type="text" autocomplete="none" value="">
+                    <label for="edit-author">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Author</label>
+                    <input id="edit-author" name="edit-author" type="text" autocomplete="none" value="">
+                     </p>
+                     <p>
+                     <label for="edit-subject">&nbsp; Subject</label>
+                    <input id="edit-subject" name="edit-subject" type="text" autocomplete="none" value="">
+                    <label for="edit-year">&nbsp; Published Year</label>
+                    <input id="edit-year" name="edit-year" type="text" autocomplete="none" value="">
+                     </p>
+             
+                     <p>
+                         <label for="edit-course">&nbsp; Course</label>
+                        <input id="edit-course" name="edit-course" type="text" autocomplete="none" value="">
+                        <label for="edit-ava">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Availability</label>
+                        <input id="edit-ava" name="edit-ava" type="text" autocomplete="none" value="">
+                     </p>      
+                     <br><br>
+                     <a href=""><input type="button" class="rep" value="Save Changes"></a>
+                     <a href="booksdetails.html"><input type="button" class="rep" value="Cancel"></a>  
+        
+        </form>
+         
+
+    </div>
+    <footer>
+        <a href="./report.html">Report <img src="./icons/report.png" alt="Report-icon"></a>
+    </footer> 
+
+    <script src="JS/navbar.js"></script>
+</body>
+</html>

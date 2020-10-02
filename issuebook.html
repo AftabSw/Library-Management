@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <a href="./index.html" class="logo" > 
+                <img src="./images/logo.png" alt="Logo">
+                <p> Rizvi College of Engineering Library</p>
+            </a>
+            <div class="head-icons">
+                <a onclick="toggleNotification()"><img id="msg-icon" src="./icons/notification.png" alt="Notification"></a>
+                <div id="notification">
+                    <ul>
+                        <li>1. Notification</li>
+                    </ul>
+                </div>
+                <a href="./settings.html"><img src="./icons/settings.png" alt="Settings"></a>
+            </div>
+        </div>
+        <nav>
+            <ul id="navbar">
+                <li class="nav-item">
+                    <a id="comp">Computer</a>
+                </li>
+                <li class="nav-item">
+                    <a id="extc">Electronics & Telecommunications</a>
+                </li>
+                <li class="nav-item">
+                    <a id="etrx">Electronics & Computer Science</a>
+                </li>
+                <li class="nav-item">
+                    <a id="mech">Mechanical</a>
+                </li>
+                <li class="nav-item">
+                    <a id="civil">Civil</a>
+                </li>
+                <li class="nav-item">
+                    <a id="ai">AI & Data Science</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+       <div>
+           <h2 class="restyle">Issue Book</h2>
+       </div>
+       <br>
+       <div class="rectangle">
+
+        <div class="user"> <p class="ro">User Detail's</p></div>
+        
+        <hr color="black">
+        <br>
+
+        <form action="" method="POST">
+
+            <p>
+                <label for="name"> &nbsp;&nbsp; Name</label>
+                <input id="name" name="name" type="text" autocomplete="none" placeholder="Enter your name">
+            
+                <label for="UIN"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UIN</label>
+                <input id="UIN" name="UIN" type="text" autocomplete="none" placeholder="Enter your UIN">
+            </p>
+            <p>
+                 <label for="year"> &nbsp;&nbsp;&nbsp; Year&nbsp; </label>
+                 <select name="year" id="year">
+                 <option value="First Year">First Year</option>
+                 <option value="Second Year">Second Year</option>
+                 <option value="Third Year">Third Year</option>
+                 <option value="Final Year">Final Year</option>
+                 </select>
+
+        
+                <label for="email" class="doit"> &nbsp;&nbsp; Email</label>
+                <input id="email" name="email" type="email" autocomplete="none" placeholder="Enter your email">
+            </p>
+                <br>
+                <br><hr color="black">
+        
+                <div class="user"><p class="ro">Book Detail's</p></div>
+                <br><hr color="black">
+                <br><br>
+        
+               <label for="bookid">&nbsp; Book-Id</label>
+               <input id="bookid" name="bookid" type="text" autocomplete="none" placeholder="Enter the Book-Id">
+                
+               <label for="title">&nbsp; Title</label>
+               <input id="title" name="title" type="text" autocomplete="none" placeholder="Enter the Title of the Book">
+               <br><br><br>
+         
+            <div align="center">
+               <label for="date"> Date Of Issue</label>
+               <input id="date" name="date" type="datetime-local" autocomplete="none" placeholder="Enter the Book-Id">
+           </div>
+       <br><br>
+           <a href=""><input type="button" class="rep" value="Issue"></a>
+           <a href="booksdetails.html"><input type="button" class="rep" value="Cancel"></a>
+
+     </form>
+
+        </div>
+        <footer>
+            <a href="./report.html">Report <img src="./icons/report.png" alt="Report-icon"></a>
+        </footer>
+        <script src="JS/navbar.js"></script> 
+</body>
+</html>

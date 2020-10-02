@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <a href="./index.html" class="logo" > 
+                <img src="./images/logo.png" alt="Logo">
+                <p> Rizvi College of Engineering Library</p>
+            </a>
+            <div class="head-icons">
+                <a onclick="toggleNotification()"><img id="msg-icon" src="./icons/notification.png" alt="Notification"></a>
+                <div id="notification">
+                    <ul>
+                        <li>1. Notification</li>
+                    </ul>
+                </div>
+                <a href="./settings.html"><img src="./icons/settings.png" alt="Settings"></a>
+            </div>
+        </div>
+        <nav>
+            <ul id="navbar">
+                <li class="nav-item">
+                    <a id="comp">Computer</a>
+                </li>
+                <li class="nav-item">
+                    <a id="extc">Electronics & Telecommunications</a>
+                </li>
+                <li class="nav-item">
+                    <a id="etrx">Electronics & Computer Science</a>
+                </li>
+                <li class="nav-item">
+                    <a id="mech">Mechanical</a>
+                </li>
+                <li class="nav-item">
+                    <a id="civil">Civil</a>
+                </li>
+                <li class="nav-item">
+                    <a id="ai">AI & Data Science</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="notification">
+
+        <ul>
+
+            <li>Hello</li>
+
+        </ul>
+
+    </div>
+
+    <div id="search">
+
+        <img src="./icons/search.png" alt="" class="search-icon">
+
+        <input type="text" class="search-box" placeholder="Search">
+
+    </div>
+    </header>
+        <div>
+            <h2 class="restyle">Add Book</h2>
+        </div>
+        <br>
+        <div class="secondrect">
+
+            <div class="add"><p>Book Information</p></div>
+                <hr color="black">
+
+                    <br><br>
+    
+                        <form action="" method="POST">
+                            <p align="center">
+                                <label for="subject"> Subject</label>
+                                <input id="subject" name="subject" type="text" autocomplete="none" placeholder="Enter the subject">
+                            </p>
+                            <p align="center">
+                                <label for="add-title"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Title</label>
+                                <input id="add-title" name="add-title" type="text" autocomplete="none" placeholder="Enter the Title of the Book">
+                            </p>
+                            <p align="center">
+                                <label for="add-author" class="align"> &nbsp; Author</label>
+                                <input id="add-author" name="add-author" type="text" autocomplete="none" placeholder="Enter the Author Name">
+                            </p>                        
+                            <p align="center">
+                                <label for="add-book-id">  Book-Id</label>
+                                <input id="add-book-id" name="add-book-id" type="text" autocomplete="none" placeholder="Enter the Book-Id">
+                            </p>
+                            <p align="center">
+                                <label for="edition"> &nbsp; Edition</label>
+                                <input id="edition" name="edition" type="text" autocomplete="none" placeholder="Enter the edition of the book">
+                            </p>
+                            <p align="center">
+                                <label for="copies"> &nbsp; Copies</label>
+                                <input id="copies" name="copies" type="number" autocomplete="none" placeholder="Enter the number of copies" min="1">
+                            </p>
+                        
+                            <br><br>
+                            <a href=""><input type="button" class="per" value="Add"></a>
+                            <a href="booksdetails.html"><input type="button" class="per" value="Cancel"></a>
+                        </form>
+                
+                </div>
+                <footer>
+                    <a href="./report.html">Report <img src="./icons/report.png" alt="Report-icon"></a>
+                </footer>
+                <script src="JS/navbar.js"></script>
+</body>
+</html>

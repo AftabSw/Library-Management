@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <a href="./index.html" class="logo" > 
+                <img src="./images/logo.png" alt="Logo">
+                <p> Rizvi College of Engineering Library</p>
+            </a>
+            <div class="head-icons">
+                <a onclick="toggleNotification()"><img id="msg-icon" src="./icons/notification.png" alt="Notification"></a>
+                <div id="notification">
+                    <ul>
+                        <li>1. Notification</li>
+                    </ul>
+                </div>
+                <a href="./settings.html"><img src="./icons/settings.png" alt="Settings"></a>
+            </div>
+        </div>
+        <nav>
+            <ul id="navbar">
+                <li class="nav-item">
+                    <a id="comp">Computer</a>
+                </li>
+                <li class="nav-item">
+                    <a id="extc">Electronics & Telecommunications</a>
+                </li>
+                <li class="nav-item">
+                    <a id="etrx">Electronics & Computer Science</a>
+                </li>
+                <li class="nav-item">
+                    <a id="mech">Mechanical</a>
+                </li>
+                <li class="nav-item">
+                    <a id="civil">Civil</a>
+                </li>
+                <li class="nav-item">
+                    <a id="ai">AI & Data Science</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="notification">
+
+        <ul>
+
+            <li>Hello</li>
+
+        </ul>
+
+    </div>
+
+    <div id="search">
+
+        <img src="./icons/search.png" alt="" class="search-icon">
+
+        <input type="text" class="search-box" placeholder="Search">
+
+    </div>
+    </header>
+    
+        <div>
+            <h2 class="style">Book Details</h2>
+        </div>
+        
+        <span>
+       
+            <img src=".//images/harry.jpg" right="50%" alt="Books" class="image" align="center">
+        </span>
+    <br>
+<span>  
+    <textarea name="About Book" id="picture" cols="40" rows="8" readonly>Harry Potter and the Deathly Hallows is a fantasy novel written by British author J. K. Rowling and the seventh and final novel of the Harry Potter series. It was released on 21 July 2007 in the United Kingdom by Bloomsbury Publishing, in the United States by Scholastic, and in Canada by Raincoast Books.</textarea>
+</span>
+   
+
+<span>
+    
+    <table border align="center" class="modify">
+                <tr>
+                    <td>Title:</td>
+                </tr>
+                <tr>
+                    <td>Author:</td>
+                </tr>
+                <tr>
+                    <td>Published Year:</td>
+                </tr>
+                <tr>
+                    <td>Subject:</td>
+                </tr>
+                <tr>
+                    <td>Course(CBSGS/CBCGS/etc):</td>
+                </tr>
+                <tr>
+                    <td>Availability:</td>
+                </tr>
+    </table>
+</span>
+       <br> <br><br>   
+
+     
+  <a href="addbook.html" add target="_self"><input class="red" type="button" value="Add Book"></a>
+  <a href="editbook.html" add target="_self"><input class="red" type="button" value="Edit Book"></a> 
+  <a href="deletebook.html" add target="_self"><input class="red" type="button" value="Delete Book"></a> 
+  <a href="issuebook.html" add target="_self" ><input class="red" type="button" value="Issue Book"></a>  
+  <a href="" add target="_self"><input class="red" type="button" value="Generate Report"></a>
+
+  
+  <br>
+  <footer>
+    <a href="./report.html">Report <img src="./icons/report.png" alt="Report-icon"></a>
+</footer>
+<script src="./js/navbar.js"></script>
+  
+</body>
+</html>
